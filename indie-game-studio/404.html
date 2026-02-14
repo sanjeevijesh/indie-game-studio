@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | GameCraft Studios</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .error-404 {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--light-bg);
+        }
+
+        .error-content {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .error-code {
+            font-size: 10rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .error-icon {
+            font-size: 5rem;
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+        }
+
+        .error-title {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .error-message {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .error-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .helpful-links {
+            margin-top: 3rem;
+        }
+
+        .helpful-links h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .helpful-links ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .helpful-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: gap 0.3s;
+        }
+
+        .helpful-links a:hover {
+            gap: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+
+            .error-icon {
+                font-size: 3rem;
+            }
+
+            .error-title {
+                font-size: 2rem;
+            }
+
+            .error-message {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>GameCraft Studios</span>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="dropdown">
+                            <a href="index.html" class="dropdown-toggle">
+                                Home <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Home Page 1</a></li>
+                                <li><a href="home2.html">Home Page 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="tools.html">Tools & Tech</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="error-404">
+        <div class="container">
+            <div class="error-content">
+                <div class="error-icon">
+                    <i class="fas fa-ghost"></i>
+                </div>
+                <div class="error-code">404</div>
+                <h1 class="error-title">Page Not Found</h1>
+                <p class="error-message">
+                    Oops! The page you're looking for seems to have wandered off into another dimension. 
+                    Perhaps it's exploring a new level, or maybe it got lost in the code.
+                </p>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Search for games, services, or info..." id="searchInput">
+                </div>
+
+                <div class="error-buttons">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fas fa-home"></i>
+                        <span>Back to Home</span>
+                    </a>
+                    <a href="javascript:history.back()" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Go Back</span>
+                    </a>
+                </div>
+
+                <div class="helpful-links">
+                    <h3>You might be looking for:</h3>
+                    <ul>
+                        <li><a href="index.html#upcoming"><i class="fas fa-gamepad"></i> Upcoming Games</a></li>
+                        <li><a href="services.html"><i class="fas fa-briefcase"></i> Our Services</a></li>
+                        <li><a href="about.html"><i class="fas fa-users"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-gamepad"></i> GameCraft Studios</h3>
+                    <p>Creating unique indie games that inspire and entertain players around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="tools.html">Tools & Tech</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="press-kit.html">Press Kit</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="404.html">404 Error Page</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Get updates on our latest releases</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GameCraft Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- RTL Toggle Button -->
+    <button class="rtl-toggle" id="rtlToggle" title="Toggle RTL/LTR">
+        <i class="fas fa-language"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple search functionality for 404 page
+        const searchInput = document.getElementById('searchInput');
+        
+        if (searchInput) {
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    const searchTerm = searchInput.value.toLowerCase();
+                    
+                    // Simple keyword-based redirection
+                    if (searchTerm.includes('game') || searchTerm.includes('upcoming')) {
+                        window.location.href = 'index.html#upcoming';
+                    } else if (searchTerm.includes('about') || searchTerm.includes('team') || searchTerm.includes('story')) {
+                        window.location.href = 'about.html';
+                    } else if (searchTerm.includes('tool') || searchTerm.includes('tech') || searchTerm.includes('unity') || searchTerm.includes('unreal')) {
+                        window.location.href = 'tools.html';
+                    } else if (searchTerm.includes('service') || searchTerm.includes('development') || searchTerm.includes('design')) {
+                        window.location.href = 'services.html';
+                    } else if (searchTerm.includes('contact') || searchTerm.includes('email') || searchTerm.includes('phone')) {
+                        window.location.href = 'contact.html';
+                    } else {
+                        window.location.href = 'index.html';
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

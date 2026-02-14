@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameCraft Studios | Indie Game Development</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>GameCraft Studios</span>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="dropdown">
+                            <a href="index.html" class="active dropdown-toggle">
+                                Home <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Home Page 1</a></li>
+                                <li><a href="home2.html">Home Page 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="tools.html">Tools & Tech</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Crafting Immersive Gaming Experiences</h1>
+                <p>We are an indie game studio dedicated to creating unique, story-driven games that captivate and inspire players worldwide.</p>
+                <div class="hero-buttons">
+                    <a href="#upcoming" class="btn btn-primary">View Our Games</a>
+                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <h3>5+</h3>
+                    <p>Games Released</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <h3>100K+</h3>
+                    <p>Active Players</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <h3>4.8/5</h3>
+                    <p>Average Rating</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-globe"></i>
+                    <h3>45+</h3>
+                    <p>Countries Reached</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upcoming-games" id="upcoming">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming Releases</h2>
+                <p>Get ready for our next generation of indie games</p>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Games</button>
+                <button class="filter-btn" data-filter="metroidvania">Metroidvania</button>
+                <button class="filter-btn" data-filter="roguelike">Roguelike</button>
+                <button class="filter-btn" data-filter="platformer">Platformer</button>
+                <button class="filter-btn" data-filter="action">Action</button>
+            </div>
+            <div class="games-grid">
+                <div class="game-card" data-category="metroidvania platformer">
+                    <div class="game-trailer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6XGeJwsUP9c?si=GXsFS_iffbP-lbVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="game-info">
+                        <h3>Hollow Knight: Silksong</h3>
+                        <p class="game-genre"><i class="fas fa-tag"></i> Metroidvania, Platformer</p>
+                        <p class="game-desc">Ascend to the top of a vast, haunted kingdom in Silksong, the sequel to Hollow Knight.</p>
+                        <div class="game-meta">
+                            <span class="release-date"><i class="far fa-calendar"></i> TBA 2026</span>
+                            <span class="platform"><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="roguelike action">
+                    <div class="game-trailer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/txQKYcbIAHU?si=dPWdAVPUthpsKAu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="game-info">
+                        <h3>Hades II</h3>
+                        <p class="game-genre"><i class="fas fa-tag"></i> Roguelike, Action</p>
+                        <p class="game-desc">Battle beyond the Underworld using dark sorcery as you take on the Titan of Time.</p>
+                        <div class="game-meta">
+                            <span class="release-date"><i class="far fa-calendar"></i>2027</span>
+                            <span class="platform"><i class="fas fa-desktop"></i> PC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="platformer action">
+                    <div class="game-trailer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qPoyEkQePA4?si=-_RSthPyMUB8Gbcy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="game-info">
+                        <h3>Replaced</h3>
+                        <p class="game-genre"><i class="fas fa-tag"></i> Platformer, Sci-Fi</p>
+                        <p class="game-desc">A 2.5D sci-fi retro-futuristic action platformer set in an alternative 1980s.</p>
+                        <div class="game-meta">
+                            <span class="release-date"><i class="far fa-calendar"></i> 2026</span>
+                            <span class="platform"><i class="fas fa-desktop"></i> PC, Xbox</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Players & Partners Say</h2>
+                <p>Feedback from our community and collaborators</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"GameCraft Studios consistently delivers unique gaming experiences that stand out in the indie scene. Their attention to narrative detail and gameplay mechanics is exceptional."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop" alt="Player">
+                        <div>
+                            <h4>Alex Thompson</h4>
+                            <p>Early Access Player</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Working with GameCraft has been a pleasure. They understand the balance between artistic vision and commercial viability, making them ideal partners."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Partner">
+                        <div>
+                            <h4>Sarah Chen</h4>
+                            <p>Publishing Partner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Their community engagement is fantastic. GameCraft truly listens to player feedback and continuously improves their games post-launch."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" alt="Community">
+                        <div>
+                            <h4>James Wilson</h4>
+                            <p>Beta Tester</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dev-blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Dev Blog Posts</h2>
+                <p>Behind the scenes of game development</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=500&fit=crop" alt="Game Design Process">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date"><i class="far fa-clock"></i> February 5, 2026</span>
+                        <h3>Designing Memorable Boss Encounters</h3>
+                        <p>A deep dive into our process for creating challenging yet fair boss fights that players will remember.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=500&fit=crop" alt="Sound Design">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date"><i class="far fa-clock"></i> January 28, 2026</span>
+                        <h3>The Role of Sound Design in Immersion</h3>
+                        <p>Exploring how audio elements enhance gameplay and create atmospheric experiences.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800&h=500&fit=crop" alt="Team Collaboration">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date"><i class="far fa-clock"></i> January 20, 2026</span>
+                        <h3>Building a Strong Indie Team Culture</h3>
+                        <p>How we maintain creativity and productivity in a small, passionate development team.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="community">
+        <div class="container">
+            <div class="community-content">
+                <h2>Join Our Community</h2>
+                <p>Connect with fellow gamers, get exclusive updates, and be part of our development journey</p>
+                <div class="community-links">
+                    <a href="https://store.steampowered.com" target="_blank" class="community-btn">
+                        <i class="fab fa-steam"></i>
+                        <span>Steam</span>
+                    </a>
+                    <a href="https://discord.com" target="_blank" class="community-btn">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="community-btn">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="community-btn">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-gamepad"></i> GameCraft Studios</h3>
+                    <p>Creating unique indie games that inspire and entertain players around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="tools.html">Tools & Tech</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="press-kit.html">Press Kit</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="404.html">404 Error Page</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Get updates on our latest releases</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GameCraft Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- RTL Toggle Button -->
+    <button class="rtl-toggle" id="rtlToggle" title="Toggle RTL/LTR">
+        <i class="fas fa-language"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | GameCraft Studios</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>GameCraft Studios</span>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="dropdown">
+                            <a href="index.html" class="dropdown-toggle">
+                                Home <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Home Page 1</a></li>
+                                <li><a href="home2.html">Home Page 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="tools.html">Tools & Tech</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Studio Dashboard</h1>
+            <p>Monitor your game development progress and analytics</p>
+        </div>
+    </section>
+
+    <!-- Dashboard Stats -->
+    <section class="dashboard-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-download"></i>
+                    <h3 class="stat-number" data-target="542300">0</h3>
+                    <p>Total Downloads</p>
+                    <span class="stat-change positive"><i class="fas fa-arrow-up"></i> +12.5%</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <h3 class="stat-number" data-target="28400">0</h3>
+                    <p>Active Players</p>
+                    <span class="stat-change positive"><i class="fas fa-arrow-up"></i> +8.2%</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <h3 class="stat-number" data-target="4.8">0</h3>
+                    <p>Average Rating</p>
+                    <span class="stat-change positive"><i class="fas fa-arrow-up"></i> +0.3</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <h3 class="stat-number" data-target="12">0</h3>
+                    <p>Awards Won</p>
+                    <span class="stat-change positive"><i class="fas fa-arrow-up"></i> +2</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard-content">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- Active Projects -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-folder-open"></i> Active Projects</h3>
+                        <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-list">
+                        <div class="project-item">
+                            <div class="project-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="project-info">
+                                <h4>Neon Legends</h4>
+                                <p>Action RPG</p>
+                                <div class="progress-bar-small">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-icon">
+                                <i class="fas fa-chess"></i>
+                            </div>
+                            <div class="project-info">
+                                <h4>Puzzle Realms</h4>
+                                <p>Strategy Puzzle</p>
+                                <div class="progress-bar-small">
+                                    <div class="progress-fill" style="width: 62%"></div>
+                                </div>
+                            </div>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-icon">
+                                <i class="fas fa-ghost"></i>
+                            </div>
+                            <div class="project-info">
+                                <h4>Shadow Quest</h4>
+                                <p>Adventure Horror</p>
+                                <div class="progress-bar-small">
+                                    <div class="progress-fill" style="width: 40%"></div>
+                                </div>
+                            </div>
+                            <span class="status-badge review">Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-clock"></i> Recent Activity</h3>
+                        <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon build">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>New Build Deployed</h4>
+                                <p>Version 2.4.1 published to production</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon bug">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Bug Fixed</h4>
+                                <p>Critical gameplay issue resolved in Neon Legends</p>
+                                <span class="activity-time">5 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon achievement">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Milestone Reached</h4>
+                                <p>100K player milestone achieved</p>
+                                <span class="activity-time">1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon release">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Update Released</h4>
+                                <p>Puzzle Realms v1.5.0 now available</p>
+                                <span class="activity-time">2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development Progress -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-tasks"></i> Development Progress</h3>
+                    </div>
+                    <div class="progress-list">
+                        <div class="progress-item-large">
+                            <div class="progress-header">
+                                <span class="progress-label">Neon Legends</span>
+                                <span class="progress-value">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill animated" style="width: 85%"></div>
+                            </div>
+                            <div class="progress-meta">
+                                <span><i class="far fa-calendar"></i> Due: Mar 15, 2026</span>
+                                <span><i class="fas fa-users"></i> 8 Team Members</span>
+                            </div>
+                        </div>
+                        <div class="progress-item-large">
+                            <div class="progress-header">
+                                <span class="progress-label">Puzzle Realms</span>
+                                <span class="progress-value">62%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill animated" style="width: 62%"></div>
+                            </div>
+                            <div class="progress-meta">
+                                <span><i class="far fa-calendar"></i> Due: Apr 20, 2026</span>
+                                <span><i class="fas fa-users"></i> 6 Team Members</span>
+                            </div>
+                        </div>
+                        <div class="progress-item-large">
+                            <div class="progress-header">
+                                <span class="progress-label">Shadow Quest</span>
+                                <span class="progress-value">40%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill animated" style="width: 40%"></div>
+                            </div>
+                            <div class="progress-meta">
+                                <span><i class="far fa-calendar"></i> Due: Jun 10, 2026</span>
+                                <span><i class="fas fa-users"></i> 5 Team Members</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Members -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-users"></i> Team Members</h3>
+                        <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="team-list">
+                        <div class="team-member-item">
+                            <div class="member-avatar">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop" alt="Alex Johnson">
+                            </div>
+                            <div class="member-details">
+                                <h4>Alex Johnson</h4>
+                                <p>Lead Developer</p>
+                            </div>
+                            <span class="status-indicator online"></span>
+                        </div>
+                        <div class="team-member-item">
+                            <div class="member-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Sarah Chen">
+                            </div>
+                            <div class="member-details">
+                                <h4>Sarah Chen</h4>
+                                <p>Art Director</p>
+                            </div>
+                            <span class="status-indicator online"></span>
+                        </div>
+                        <div class="team-member-item">
+                            <div class="member-avatar">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" alt="Mike Roberts">
+                            </div>
+                            <div class="member-details">
+                                <h4>Mike Roberts</h4>
+                                <p>Game Designer</p>
+                            </div>
+                            <span class="status-indicator online"></span>
+                        </div>
+                        <div class="team-member-item">
+                            <div class="member-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Emma Davis">
+                            </div>
+                            <div class="member-details">
+                                <h4>Emma Davis</h4>
+                                <p>QA Lead</p>
+                            </div>
+                            <span class="status-indicator offline"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-bolt"></i> Quick Actions</h3>
+                    </div>
+                    <div class="quick-actions">
+                        <a href="#" class="action-btn">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>New Project</span>
+                        </a>
+                        <a href="#" class="action-btn">
+                            <i class="fas fa-upload"></i>
+                            <span>Upload Build</span>
+                        </a>
+                        <a href="#" class="action-btn">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Generate Report</span>
+                        </a>
+                        <a href="#" class="action-btn">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Invite Member</span>
+                        </a>
+                        <a href="#" class="action-btn">
+                            <i class="fas fa-chart-line"></i>
+                            <span>View Analytics</span>
+                        </a>
+                        <a href="#" class="action-btn">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Performance Metrics -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-chart-bar"></i> Performance Metrics</h3>
+                    </div>
+                    <div class="metrics-list">
+                        <div class="metric-item">
+                            <div class="metric-label">
+                                <i class="fas fa-server"></i>
+                                <span>Server Uptime</span>
+                            </div>
+                            <div class="metric-value">99.9%</div>
+                            <div class="progress-bar-small">
+                                <div class="progress-fill" style="width: 99.9%"></div>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Player Retention</span>
+                            </div>
+                            <div class="metric-value">78%</div>
+                            <div class="progress-bar-small">
+                                <div class="progress-fill" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">
+                                <i class="fas fa-bug"></i>
+                                <span>Bug Fix Rate</span>
+                            </div>
+                            <div class="metric-value">92%</div>
+                            <div class="progress-bar-small">
+                                <div class="progress-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">
+                                <i class="fas fa-smile"></i>
+                                <span>User Satisfaction</span>
+                            </div>
+                            <div class="metric-value">4.8/5</div>
+                            <div class="progress-bar-small">
+                                <div class="progress-fill" style="width: 96%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-gamepad"></i> GameCraft Studios</h3>
+                    <p>Creating unique indie games that inspire and entertain players around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="tools.html">Tools & Tech</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="press-kit.html">Press Kit</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="404.html">404 Error Page</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Get updates on our latest releases</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GameCraft Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- RTL Toggle Button -->
+    <button class="rtl-toggle" id="rtlToggle" title="Toggle RTL/LTR">
+        <i class="fas fa-language"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Animated Counter for Stats
+        function animateCounter(element) {
+            const target = parseFloat(element.getAttribute('data-target'));
+            const isDecimal = target % 1 !== 0;
+            const duration = 2000;
+            const steps = 60;
+            const increment = target / steps;
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                
+                if (isDecimal) {
+                    element.textContent = current.toFixed(1);
+                } else if (target >= 1000) {
+                    element.textContent = Math.floor(current).toLocaleString();
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, duration / steps);
+        }
+
+        // Start animations when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            // Animate stats on load
+            setTimeout(() => {
+                statNumbers.forEach(animateCounter);
+            }, 300);
+
+            // Animate progress bars
+            const progressFills = document.querySelectorAll('.progress-fill.animated');
+            progressFills.forEach(fill => {
+                const width = fill.style.width;
+                fill.style.width = '0';
+                setTimeout(() => {
+                    fill.style.width = width;
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
